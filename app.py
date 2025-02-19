@@ -23,7 +23,7 @@ if not groq_api_key:
 agents = ResearchAgents(groq_api_key)
 
 # Initialize DataLoader for fetching research papers
-data_loader = DataLoader()
+data_loader = DataLoader(groq_api_key)
 
 # Input field for the user to enter a research topic
 query = st.text_input("Enter a research topic:")
